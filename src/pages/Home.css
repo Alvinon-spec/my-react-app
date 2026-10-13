@@ -1,0 +1,84 @@
+:root {
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --bg-card: #ffffff;
+  --text-main: #213547;
+  --text-muted: #666666;
+  --border-color: #e2e8f0;
+}
+
+.home-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 16px;
+  margin-bottom: 40px;
+  border: 1px solid var(--border-color);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--text-main);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.feature-card {
+  background-color: var(--bg-card);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+  color: var(--text-main);
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.feature-card p {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
